@@ -5,7 +5,15 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-right: 93px;
+  // margin-right: 93px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .header-logo-studio {
