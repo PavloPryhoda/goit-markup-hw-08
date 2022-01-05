@@ -10,6 +10,11 @@
   }
 
   &__text {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     @media screen and (min-width: 1200px) {
       display: flex;
     }
@@ -17,10 +22,19 @@
   }
 
   &__pre-text {
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 251px;
+      margin-bottom: 30px;
+    }
+
     @media screen and (min-width: 1200px) {
       &:not(:last-child) {
         margin-right: 30px;
+        margin-bottom: 0px;
       }
+
+      width: 270px;
     }
   }
 

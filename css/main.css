@@ -91,6 +91,8 @@ body {
 }
 
 .header-logo-web {
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -386,15 +388,35 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantage__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .advantage__text {
     display: flex;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .advantage__pre-text {
+    width: 354px;
+    height: 251px;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .advantage__pre-text {
+    width: 270px;
+  }
   .advantage__pre-text:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0px;
   }
 }
 
@@ -497,6 +519,14 @@ body {
 @media screen and (min-width: 768px) {
   .team__container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__container {
+    display: flex;
   }
 }
 
@@ -507,12 +537,23 @@ body {
 }
 
 @media screen and (min-width: 480px) {
+  .team__pre-items:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .team__pre-items {
+    width: 354px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .team__pre-items {
+    width: 270px;
+    margin-bottom: 30px;
+  }
   .team__pre-items:not(:last-child) {
     margin-right: 30px;
   }
@@ -654,6 +695,14 @@ body {
 @media screen and (min-width: 480px) {
   .container-footer {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
