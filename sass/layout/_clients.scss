@@ -1,15 +1,46 @@
 .clients {
   &__box {
-    display: flex;
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    // display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__link {
-    width: 170px;
-    height: 92px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
+    @media screen and (min-width: 480px) {
+      width: 210px;
+      height: 92px;
+      margin-bottom: 30px;
     }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+      height: 92px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+      margin-bottom: 0px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    // width: 170px;
+    // height: 92px;
+
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
   }
 
   &__link-icon {

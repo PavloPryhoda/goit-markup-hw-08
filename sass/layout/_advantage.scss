@@ -10,14 +10,32 @@
   }
 
   &__text {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+    // display: flex;
   }
 
-  &__pre-text:not(:last-child) {
-    margin-right: 30px;
+  &__pre-text {
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
+
+  // &__pre-text:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__list-text {
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+
     margin-bottom: 10px;
 
     font-family: Roboto;
@@ -32,6 +50,12 @@
   }
 
   &__title {
+    @media screen and (min-width: 480px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;

@@ -337,21 +337,43 @@ body {
   background-size: cover;
 }
 
-.hero-text {
-  width: 696px;
-  height: 120px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  display: block;
+@media screen and (min-width: 480px) {
+  .hero-text {
+    width: 360px;
+    height: 84px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    /* or 162% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    width: 696px;
+    height: 120px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+  }
 }
 
 .advantage__thumb {
@@ -364,12 +386,16 @@ body {
   margin-bottom: 30px;
 }
 
-.advantage__text {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .advantage__text {
+    display: flex;
+  }
 }
 
-.advantage__pre-text:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .advantage__pre-text:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantage__list-text {
@@ -384,6 +410,18 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 480px) {
+  .advantage__list-text {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__list-text {
+    text-align: start;
+  }
+}
+
 .advantage__title {
   font-family: Roboto;
   font-style: normal;
@@ -392,6 +430,18 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 480px) {
+  .advantage__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__title {
+    margin-bottom: 0px;
+  }
 }
 
 .work__container {
@@ -436,12 +486,18 @@ body {
   color: #ffffff;
 }
 
+.img-items {
+  width: 100%;
+}
+
 .team {
   background-color: #f5f4fa;
 }
 
-.team__container {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .team__container {
+    display: flex;
+  }
 }
 
 .team__pre-items {
@@ -450,8 +506,16 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__pre-items:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .team__pre-items {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__pre-items:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__box-text {
@@ -517,17 +581,45 @@ body {
   fill: currentColor;
 }
 
-.clients__box {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .clients__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.clients__link {
-  width: 170px;
-  height: 92px;
+@media screen and (min-width: 1200px) {
+  .clients__box {
+    display: flex;
+  }
 }
 
-.clients__link:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 210px;
+    height: 92px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+    height: 92px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+    height: 92px;
+    margin-bottom: 0px;
+  }
+  .clients__link:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__link-icon {
@@ -562,6 +654,13 @@ body {
 @media screen and (min-width: 480px) {
   .container-footer {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+    text-align: start;
   }
 }
 
@@ -621,6 +720,12 @@ address {
 .social {
   margin-bottom: 60px;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .social {
+    margin-left: 70px;
+  }
 }
 
 .social__text {
@@ -688,6 +793,18 @@ address {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .send__mail {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .send__form {
+    display: flex;
+  }
+}
+
 .send__icon {
   width: 24px;
   height: 24px;
@@ -695,7 +812,6 @@ address {
 }
 
 .input-mail {
-  width: 100%;
   height: 50px;
   margin-right: 12px;
   margin-bottom: 20px;
@@ -712,6 +828,26 @@ address {
   transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .input-mail {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .input-mail {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-mail {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
 .input-mail:hover, .input-mail:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
@@ -719,7 +855,6 @@ address {
 .button-send {
   width: 200px;
   height: 50px;
-  margin: auto;
   background: var(--accent-color);
   border-radius: 4px;
   border: none;
@@ -738,6 +873,18 @@ address {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .button-send {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-send {
+    margin: 0px;
+  }
 }
 
 .button-send:hover, .button-send:focus {
