@@ -20,7 +20,11 @@
     <header class="">
         <div class="container header-nav">
             <a class="link header-logo-web" href="./index.html">Web<span class="header-logo-studio">Studio</span></a>
-            <button type="button" class="header-button__close">close</button>
+            <button type="button" class="header-button__close">
+                <svg class="button-menu">
+                    <use href="./images/symbol-defs.svg#icon-menu-40px"></use>
+                </svg>
+            </button>
             <nav class="main-nav">
                 <ul class="list header__box-list">
                     <li class="header__list">
@@ -110,7 +114,7 @@
             </div>
         </section>
         <!-----Чем-мы-занимаемся----->
-        <!-- <section class="work__container ">
+        <section class="work__container ">
             <div class="container">
             <h2 class="title">Чем мы занимаемся</h2>
             <ul class="list work__container-img">
@@ -128,7 +132,7 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
         <!-----Наша команда----->
         <section class="section team">
             <div class="container">
@@ -434,7 +438,7 @@
         </div>
     </footer>
     <!-- -----modal------ -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close" data-modal-close>
                 <svg class="modal__close-icon">
@@ -512,7 +516,7 @@
                 <button class="modal__button" type="submit">Отправить</button>
             </form>
         </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
