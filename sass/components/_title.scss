@@ -1,12 +1,38 @@
 .title {
-  margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--header-text-color);
+    color: var(--header-text-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-text-color);
+  }
+
+  // margin-bottom: 50px;
+
+  // font-family: Roboto;
+  // font-style: normal;
+  // font-weight: bold;
+  // font-size: 36px;
+  // line-height: 42px;
+  // text-align: center;
+  // letter-spacing: 0.03em;
+  // color: var(--header-text-color);
 }
