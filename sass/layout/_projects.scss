@@ -42,11 +42,18 @@
 
   &__button {
     @media screen and (min-width: 480px) {
-      margin-bottom: 15px;
+      &:nth-child(-n + 3) {
+        margin-bottom: 15px;
+      }
+      // margin-bottom: 15px;
     }
     @media screen and (min-width: 768px) {
-      margin-bottom: 0px;
+      &:nth-child(-n + 3) {
+        margin-bottom: 0px;
+      }
+      // margin-bottom: 0px;
     }
+
     &:not(:last-child) {
       margin-right: 8px;
     }

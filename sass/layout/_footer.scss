@@ -19,6 +19,9 @@
 }
 
 .footer-container {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
   margin-bottom: 60px;
 }
 
@@ -77,6 +80,9 @@ address {
 }
 
 .social {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
@@ -156,8 +162,13 @@ address {
   }
 
   &__mail {
+    @media screen and (min-width: 768px) {
+      margin-top: 60px;
+    }
+
     @media screen and (min-width: 1200px) {
       margin-left: 93px;
+      margin-top: 0px;
     }
     // margin-left: 93px;
   }
