@@ -32,17 +32,17 @@
   background-color: transparent;
 }
 
-.header-button__close .icon-close-menu {
-  display: none;
-}
+// .header-button__close .icon-close-menu {
+//   display: none;
+// }
 
-.header-button__close.is-open .icon-close-menu {
-  display: block;
-}
+// .header-button__close.is-open .icon-close-menu {
+//   display: block;
+// }
 
-.header-button__close.is-open .icon-menu {
-  display: none;
-}
+// .header-button__close.is-open .icon-menu {
+//   display: none;
+// }
 
 .header-button__close {
   @media screen and (min-width: 768px) {

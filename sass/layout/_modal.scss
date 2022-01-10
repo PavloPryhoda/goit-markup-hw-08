@@ -163,8 +163,8 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 14px;
 
     letter-spacing: 0.03em;
     text-decoration-line: underline;
@@ -172,6 +172,21 @@
     color: var(--accent-color);
 
     margin-left: 3px;
+
+    @media screen and (min-width: 1200px) {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.71;
+
+      letter-spacing: 0.03em;
+      text-decoration-line: underline;
+
+      color: var(--accent-color);
+
+      margin-left: 3px;
+    }
   }
 
   &__button {
@@ -197,6 +212,34 @@
     border-radius: 4px;
     border: none;
     cursor: pointer;
+  }
+
+  &__policy-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__policy-text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      /* identical to box height, or 171% */
+
+      letter-spacing: 0.03em;
+
+      color: #757575;
+    }
   }
 }
 
