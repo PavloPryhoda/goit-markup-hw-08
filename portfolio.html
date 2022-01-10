@@ -22,12 +22,88 @@
     <header>
         <div class="container header-nav">
             <a class="link header-logo-web" href="./index.html">Web<span class="header-logo-studio">Studio</span></a>
-            <button type="button" class="header-button__close is-open">
+            <!-- <button type="button" class="header-button__close is-open">
                 <svg class="button-menu" aria-label="Переключатель мобільного меню">
                     <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-40px"></use>
                     <use class="icon-close-menu" href="./images/symbol-defs.svg#icon-close-menu"></use>
                 </svg>
-            </button>
+            </button> -->
+
+
+
+            <div class="mobile-menu">
+                <div class="mobile-menu-btn">
+                    <button type="button" class="mobile-menu-btn__open">
+                        <svg class="mobile-menu-btn__open-icon">
+                            <use href="./images/symbol-defs.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+            
+                <div class="mobile-menu__modal is-hidden ">
+            
+                    <div class="mobile-menu__content">
+                        <nav class="mobile-navigation">
+                            <ul class="list mobile-navigation-list">
+                                <li class="mobile-navigation-list-li">
+                                    <a href="./index.html" class="link mobile-navigation-list-item active  "> Студия </a>
+                                </li>
+                                <li class="mobile-navigation-list-li">
+                                    <a href="./portfolio.html" class="link mobile-navigation-list-item">Портфолио</a>
+                                </li>
+                                <li class="mobile-navigation-list-li">
+                                    <a href="" class="link mobile-navigation-list-item">Контакты </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <ul class="list mobile-contacts-list">
+                                <li class="mobile-contacts-list-item">
+                                    <a href="mailto:info@devstudio.com" class="link mobile-contacts ">
+                                        info@devstudio.com</a>
+                                </li>
+            
+                                <li class="mobile-contacts-list-item">
+                                    <a href="tel:+380961111111" class="link mobile-contacts">
+                                        +38 096 111 11 11</a>
+                                </li>
+                            </ul>
+            
+                            <ul class="list mobile-menu__social">
+                                <li class="mobile-menu__social-item">
+                                    <a href="" class="link mobile-menu__social-linc"> Instagram </a>|
+                                </li>
+            
+                                <li class="mobile-menu__social-item">
+                                    <a href="" class="link mobile-menu__social-linc"> Twitter </a>|
+                                </li>
+            
+                                <li class="mobile-menu__social-item">
+                                    <a href="" class="link mobile-menu__social-linc"> Facebook </a>|
+                                </li>
+            
+                                <li class="mobile-menu__social-item">
+                                    <a href="" class="link mobile-menu__social-linc"> LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="mobile-menu-close ">
+                        <button type="button" class="mobile-menu-close-btn ">
+                            <svg class="mobile-menu-btn__close-icon">
+                                <use href="./images/symbol-defs.svg#icon-close-menu"></use>
+                            </svg>
+                        </button>
+            
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
             <nav class="main-nav">
                 <ul class="list header__box-list">
                     <li class="header__list">

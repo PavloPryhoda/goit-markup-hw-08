@@ -16,6 +16,7 @@
   background-color: transparent;
   border: transparent;
   position: relative;
+  cursor: pointer;
 }
 .mobile-menu-btn__open-icon {
   position: absolute;
@@ -24,17 +25,17 @@
   width: 40px;
   height: 40px;
   transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: 250ms;
+  transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
-    fill: var(--one);
+    fill: #2196f3;
   }
 }
 .mobile-menu__modal {
   width: 100vw;
   height: 100vh;
-  background-color: var(--two);
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,14 +45,14 @@
   justify-content: space-between;
   padding: 48px 40px;
   transition-property: transform;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: 250ms;
+  transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(0);
   &.is-hidden {
     transform: translateX(100%);
     transition-property: transform;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--timing-function);
+    transition-duration: 250ms;
+    transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -67,30 +68,47 @@
 // }
 
 .mobile-navigation-list-li {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 .mobile-navigation-list-item {
-  font-family: roboto;
+  // font-family: roboto;
+  // font-weight: 500;
+  // font-size: 40px;
+  // line-height: 1.17;
+  // color: #212121;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.17;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
   color: #212121;
+
+  &:focus,
+  &:hover {
+    color: #2196f3;
+  }
 }
 .mobile-contacts-list {
   margin-bottom: 64px;
 }
 .mobile-contacts {
-  color: var(--light);
+  color: #757575;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
+  display: block;
+
+  margin-bottom: 32px;
   // margin-bottom: 32px;
   transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: 250ms;
+  transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
-    color: var(--one);
+    color: #2196f3;
     font-size: 34px;
   }
 }
@@ -116,7 +134,7 @@
   font-weight: 500;
   font-style: 18px;
   line-height: 1.2;
-  color: var(--one);
+  color: #2196f3;
   margin-right: 10px;
   position: relative;
 }
@@ -131,16 +149,17 @@
   border: transparent;
 }
 .mobile-menu-btn__close-icon {
-  width: 19px;
-  height: 19px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  left: 25%;
-  bottom: 25%;
+  left: 0;
+  bottom: 0;
   transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: 2250ms;
+  transition-timing-function: linear cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
   &:focus,
   &:hover {
-    fill: var(--one);
+    fill: #2196f3;
   }
 }
